@@ -1,0 +1,91 @@
+/* Default styles */
+#Skincare, #Body, #Hair {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0 1%; /* Add margin for spacing between images */
+}
+
+#our_mission, #contact, #allergy {
+    border: 2px solid #000; /* 2px solid border with black color */
+    padding: 10px; /* Add padding for space between text and border */
+    text-align: center;
+    width: 60%; /* Set div width to 60% */
+    margin-bottom: 20px; /* Add margin-bottom for space between divs */
+    display: block; /* Display divs as block elements */
+}
+
+#hero {
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.75em;
+    font-family: 'Send Flower', cursive; /* Updated font-family property */
+    border-top: 1px solid rgb(225, 36, 36);
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Align items with space between */
+}
+
+footer {
+    text-align: center; /* Center content of footer */
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    nav  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: block;
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header img {
+        height: auto;
+    }
+}
+
+/* Media query for smallest screen size */
+@media only screen and (max-width: 480px) {
+    nav  {
+        display: block; /* Display navigation items as block elements */
+    }
+}
